@@ -34,11 +34,13 @@ namespace LastCheck
         public string Organization { get; set; }
         public string Type { get; set; }
         public string Editor { get; set; }
+        public string Chapter { get; set; }
+
         public override string ToString()
         {
             return $"{EntryType} - {Author} - {Title} - {Year} - {Volume} - {Journal} - {Series} -" +
                 $" {Number} - {Pages} - {Month} - {Doi} - {Note} - {Key} - {Publisher} - {Address} - " +
-                $"{Edition} - {Url} - {Howpublished} - {Booktitle} - {Organization} - {Type} - {Editor}";
+                $"{Edition} - {Url} - {Howpublished} - {Booktitle} - {Organization} - {Type} - {Editor} - {Chapter}";
         }
     }
 }
