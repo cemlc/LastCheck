@@ -91,6 +91,7 @@ namespace BiBuddy.UI
             addP.Show();
             addP.sPanelBookTxB.Visibility = Visibility.Visible;
             addP.sPanelBookTBx.Visibility = Visibility.Visible;
+
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -179,9 +180,9 @@ namespace BiBuddy.UI
                             EntryType = entry.Type,
                             Author = entry.Author,
                             Title = entry.Title,
-                            Year = entry.Year
-                            
-                            
+                            Year = entry.Year,
+                            Volume = entry.Volume,
+
 
                         };
                         connection.Insert(academic);
